@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: dimgray;
+  color: white;
+}
+
+.container {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 6);
+  transition: width 150ms ease-in-out;
+  animation-duration: 250ms;
+  animation-name: slidein;
+  overflow: hidden;
+  border: 1px solid grey;
+}
+
+.content {
+  position: absolute;
+  left: calc(50% - 80px);
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  min-width: 160px;
+}
+
+.item:hover {
+  width: calc(100% / 6 + 10%);
+}
+
+.add {
+  margin-top: 60px;
+}
+
+@keyframes slidein {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: calc(100% / 6);
+  }
+}
