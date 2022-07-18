@@ -1,6 +1,6 @@
-# SImple slide effect for stacked items
+# Simple slide effect for stacked items
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Demo](https://boisterous-lebkuchen-9bf690.netlify.app/).
 
 ## Available Scripts
 
